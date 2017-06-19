@@ -5,12 +5,12 @@ Auto screenshot taker & uploader using Headless Google Chrome on Docker on Travi
 Set those environment variables and run on travis CI.
 
 - FOTOLIFE_API_KEY
- - You can get WSSE API Key from http://developer.hatena.ne.jp/ja/documents/auth/apis/wsse
+  - You can get WSSE API Key from http://developer.hatena.ne.jp/ja/documents/auth/apis/wsse
 - FOTOLIFE_USER_NAME
- - If you are `id:sample`, set `sample`.
+  - If you are `id:sample`, set `sample`.
 - FOTOLIFE_FOLDER
 - URLS
- - Separated by space(` `)
+  - Separated by space(` `)
 
 # SEE ALSO
 

@@ -17,7 +17,8 @@ before_install:
 - docker pull yukinying/chrome-headless-browser
 - docker run -d --name chrome --shm-size=1024m -p=127.0.0.1:9222:9222 --cap-add=SYS_ADMIN yukinying/chrome-headless-browser
 - yarn
-- git clone https://github.com/schnerd/chrome-headless-screenshots.git && cd chrome-headless-screenshots && yarn && cd ../
+- if [ ! -d chrome-headless-screenshots ]; then; git clone https://github.com/schnerd/chrome-headless-screenshots.git ; fi;
+- cd chrome-headless-screenshots && git fetch && yarn && cd ../
 
 script:
 - ./a.sh

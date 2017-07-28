@@ -2,8 +2,10 @@
 set -ex
 
 if [ ! -d chrome-headless-screenshots ]; then
-  git clone https://github.com/schnerd/chrome-headless-screenshots.git
+  rm -rf chrome-headless-screenshots
 fi
+
+git clone https://github.com/schnerd/chrome-headless-screenshots.git
 
 cd chrome-headless-screenshots/
 git pull

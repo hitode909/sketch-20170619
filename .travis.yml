@@ -9,6 +9,7 @@ services:
 
 cache:
   directories:
+    - "chrome-headless-screenshots"
     - "node_modules"
   yarn: true
 
